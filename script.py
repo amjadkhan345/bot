@@ -177,7 +177,7 @@ def streamlit_app():
         
     # Display the Gemini Sidebar settings
     with st.sidebar.title("Gemini Settings"):
-        st.session_state.api_key = st.sidebar.text_input("API Key", type="password")
+        st.session_state.api_key = "AIzaSyB90zUQDGx82iJBKVU66s439Me_qxJanJs" #st.sidebar.text_input("API Key", type="password")
         st.session_state.temperature = st.sidebar.slider("Temperature", 0.0, 1.0, 0.3)
         st.session_state.top_k = st.sidebar.number_input("Top K", value=32)
         st.session_state.top_p = st.sidebar.slider("Top P", 0.0, 1.0, 1.0)
